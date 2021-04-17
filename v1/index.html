@@ -13,20 +13,18 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="images/header-nav/logo.png" alt=""></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+            <div class="container">
+                <a class="navbar-brand py-0 pe-5" href="index.html"><img src="images/header-nav/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><i class="fas fa-angle-down"></i></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="presentation-sous_menus" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <div>
-                                    <img src="images/header-nav/icon_presentation.png" alt="">
-                                    <p>Présentation</p>
-                                </div>
+                <div class="collapse navbar-collapse h-100" id="navbarNavDropdown">
+                    <ul class="navbar-nav justify-content-center w-100 fw-bold ps-5">
+                        <li class="nav-item dropdown px-3 bordered_nav-item">
+                            <a class="nav-link text-center align-items-center" href="#" id="presentation-sous_menus" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="images/header-nav/icon_presentation.png" alt="">
+                                <p class="m-0">Présentation <i class="fas fa-angle-down"></i></p>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="presentation-sous_menus">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -34,31 +32,45 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Offre de soin <i class="fas fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li class="nav-item dropdown px-3 bordered_nav-item">
+                            <a class="nav-link text-center align-items-center" href="#" id="offreSoins-sous_menus" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="images/header-nav/icon_offre_soins.png" alt="">
+                                <p class="m-0">Offre de soin <i class="fas fa-angle-down"></i></p>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offreSoins-sous_menus">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Actualités</a>
+                        <li class="nav-item text-center align-items-center px-3 bordered_nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="images/header-nav/icon_actualites.png" alt="">
+                                <p class="m-0">Actualités</p>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                        <li class="nav-item text-center align-items-center px-3 bordered_nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="images/header-nav/icon_contact.png" alt="">
+                                <p class="m-0">Contact</p>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">05 59 01 16 60</a>
+                        <li class="nav-item text-center align-items-center bg_turquoise px-3">
+                            <a class="nav-link" href="#">
+                                <img src="images/header-nav/icon_tel.png" alt="">
+                                <p class="m-0 text-white">05 59 01 16 60</p>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">RDV en ligne</a>
+                        <li class="nav-item text-center align-items-center bg_bleu_fonce px-3">
+                            <a class="nav-link" href="#">
+                                <img src="images/header-nav/logo_doctolib3.png" alt="">
+                                <p class="m-0 text-white">RDV en ligne</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
-          </nav>
+        </nav>
 
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">

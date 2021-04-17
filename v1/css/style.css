@@ -1,0 +1,12 @@
+.nav-link {
+    text-transform: uppercase;
+}
+.bordered_nav-item {
+    border-left: 1px solid rgba(230, 230, 230, 0.5);
+}
+.bg_turquoise {
+    background-color: rgb(46, 167, 176);
+}
+.bg_bleu_fonce {
+    background-color: rgb(8, 73, 121);
+}
