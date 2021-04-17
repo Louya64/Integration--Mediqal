@@ -1,3 +1,13 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+.font_roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.font_montserrat {
+    font-family: 'Montserrat', sans-serif
+}
+
 .nav-link {
     text-transform: uppercase;
 }
@@ -7,6 +17,23 @@
 .bg_turquoise {
     background-color: rgb(46, 167, 176);
 }
+.col_turquoise {
+    color: rgb(46, 167, 176);
+}
 .bg_bleu_fonce {
     background-color: rgb(8, 73, 121);
+}
+.col_bleu_fonce {
+    color: rgb(8, 73, 121);
+}
+.after::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: rgb(46, 167, 176);
+    border-radius: 5px;
+}
+main {
+    transform: translate(0, -250px);
 }
