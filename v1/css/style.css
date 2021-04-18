@@ -8,6 +8,9 @@ font-family: 'Roboto', sans-serif; */
     font-family: 'Montserrat', sans-serif
 }
 
+.nav-item:hover {
+    background-color: rgba(230, 230, 230, 0.5);
+}
 .nav-link {
     text-transform: uppercase;
 }
@@ -20,12 +23,19 @@ font-family: 'Roboto', sans-serif; */
 .col_turquoise {
     color: rgb(46, 167, 176);
 }
+.nav-item.bg_turquoise:hover {
+    background-color: rgb(32, 128, 135);
+}
 .bg_bleu_fonce {
-    background-color: rgb(8, 73, 121);
+    background-color: rgb(19, 97, 157);
 }
 .col_bleu_fonce {
-    color: rgb(8, 73, 121);
+    color: rgb(19, 97, 157);
 }
+.nav-item.bg_bleu_fonce:hover {
+    background-color: rgb(8, 73, 121);
+}
+
 .after::after {
     content: "";
     display: block;
@@ -34,6 +44,27 @@ font-family: 'Roboto', sans-serif; */
     background-color: rgb(46, 167, 176);
     border-radius: 5px;
 }
+/*=========================HEADER==========================*/
+/****************nav*********************/
+nav {
+    box-shadow: 0 1px 20px black;
+    z-index: 1;
+}
+/****************************************/
+#carousel_accueil .btn_prev {
+    transform: scale(2, 2) translate(-500%, -200%);
+}
+#carousel_accueil .btn_next {
+    transform: scale(2, 2) translate(500%, -200%);
+}
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1;
+}
+#carousel_accueil .carousel-caption {
+    color: white;
+    top: 15%;
+}
 main {
     transform: translate(0, -250px);
 }
+  
