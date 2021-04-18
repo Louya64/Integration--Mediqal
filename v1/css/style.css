@@ -46,6 +46,9 @@ font-family: 'Roboto', sans-serif; */
     background-color: rgb(46, 167, 176);
     border-radius: 5px;
 }
+h2.after::after {
+    margin: 15px auto 45px auto;
+}
 /*=========================HEADER==========================*/
 /****************nav*********************/
 nav {
@@ -78,9 +81,6 @@ main {
     font-weight: bold;
 }
 /***********section 2**************/
-#accueil_sect2 .after::after {
-    margin: 15px auto 45px auto;
-}
 .border_turquoise {
     border: 2px solid rgb(46, 167, 176);
 }
@@ -100,5 +100,20 @@ main {
 .card:hover .img_turquoise {
     display: none;
 }
-/**********************************/
-  
+/***********section 3*************/
+#accueil_sect3 {
+    background-image: url("../images/carousel-slick/fond-slick.png");
+}
+#accueil_sect3 p {
+    opacity: 0.7;
+}
+.slick_card:hover {
+    cursor: pointer;
+}
+.accueil_sect3_slider > button {
+    background-color: transparent;
+    border: none;
+}
+.slick-prev, .slick-next {
+    color: white;
+}
