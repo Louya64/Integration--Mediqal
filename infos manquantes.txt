@@ -13,3 +13,7 @@ quelle réaction :hover pour liens?
 images cards avantages (accueil sect2)
 "image" équipement en turquoise
 toutes les autres en blanc...
+
+/*******sect3*********/
+image non colorée cardio
+toutes les autres cards=> manque image quand hover

@@ -103,12 +103,26 @@ main {
 /***********section 3*************/
 #accueil_sect3 {
     background-image: url("../images/carousel-slick/fond-slick.png");
+    position: relative;
 }
 #accueil_sect3 p {
     opacity: 0.7;
 }
+.slick_card {
+    position: relative;
+}
+.slick_card .img_fond_turquoise {
+    display: none;
+    position: absolute;
+    top: 0;
+    padding: 84.5px 56.5px;
+    background-color: rgba(46, 167, 176, 0.521);
+}
 .slick_card:hover {
     cursor: pointer;
+}
+.slick_card:hover .img_fond_turquoise {
+    display: inline;
 }
 .accueil_sect3_slider > button {
     background-color: transparent;
@@ -116,4 +130,20 @@ main {
 }
 .slick-prev, .slick-next {
     color: white;
+}
+.slick-dots {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -40px;
+    left: 40%;
+}
+.slick-dots li {
+    font-size: 30px;
+    list-style: none;
+    padding: 0 10px;
+}
+.slick-dots li.slick-active {
+    font-size: 50px;
+    padding-bottom: 3px;
 }
