@@ -35,11 +35,14 @@ font-family: 'Roboto', sans-serif; */
 .nav-item.bg_bleu_fonce:hover {
     background-color: rgb(8, 73, 121);
 }
+.border_turquoise {
+    border: 2px solid rgb(46, 167, 176);
+}
 
 .after::after {
     content: "";
     display: block;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 45px;
     width: 100px;
     height: 5px;
@@ -47,7 +50,12 @@ font-family: 'Roboto', sans-serif; */
     border-radius: 5px;
 }
 h2.after::after {
-    margin: 15px auto 45px auto;
+    margin: 20px auto 45px auto;
+}
+h3.after::after {
+    width: 40px;
+    height: 3px;
+    margin-bottom: 35px;
 }
 /*=========================HEADER==========================*/
 /****************nav*********************/
@@ -81,23 +89,20 @@ main {
     font-weight: bold;
 }
 /***********section 2**************/
-.border_turquoise {
-    border: 2px solid rgb(46, 167, 176);
-}
-.card:hover {
+#accueil_sect2 .card:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.281);
     cursor: pointer;
 }
-.card:hover .rounded-circle {
+#accueil_sect2 .card:hover .rounded-circle {
     background-color: rgb(46, 167, 176);
 }
-.img_blanc {
+#accueil_sect2 .img_blanc {
     display: none;
 }
-.card:hover .img_blanc {
+#accueil_sect2 .card:hover .img_blanc {
     display: inline;
 }
-.card:hover .img_turquoise {
+#accueil_sect2 .card:hover .img_turquoise {
     display: none;
 }
 /***********section 3*************/
@@ -146,4 +151,42 @@ main {
 .slick-dots li.slick-active {
     font-size: 50px;
     padding-bottom: 3px;
+}
+/************section4****************/
+#accueil_sect4 .card {
+    border: none;
+}
+#accueil_sect4 .card:hover .card-title{
+    color: rgb(46, 167, 176);
+}
+#accueil_sect4 .btn:hover {
+    background-color: rgb(46, 167, 176);
+    color: white;
+    cursor: pointer;
+}
+
+/*====================  FOOTER  ====================*/
+footer {
+    transform: translate(0, -80px);
+}
+footer a {
+    color: white;
+    font-weight: bold;
+}
+footer a:hover {
+    color: rgb(46, 167, 176);
+}
+#footer_nav {
+    background-image: url("../images/logo_fond_footer.png");
+    height: 396px;
+    font-size: 15px;
+}
+#footer_nav > div {
+    height: 100%;
+}
+.footer_nav_children {
+    width: 33%;
+}
+#gcom_link {
+    background-color: black;
 }
