@@ -39,6 +39,8 @@ font-family: 'Roboto', sans-serif; */
 .after::after {
     content: "";
     display: block;
+    margin-top: 15px;
+    margin-bottom: 45px;
     width: 100px;
     height: 5px;
     background-color: rgb(46, 167, 176);
@@ -51,6 +53,7 @@ nav {
     z-index: 1;
 }
 /****************************************/
+/***************carousel*****************/
 #carousel_accueil .btn_prev {
     transform: scale(2, 2) translate(-500%, -200%);
 }
@@ -64,7 +67,38 @@ nav {
     color: white;
     top: 15%;
 }
+/*=========================MAIN============================*/
 main {
     transform: translate(0, -250px);
 }
+/*==========PAGE ACCUEIL==========*/
+/***********section 1**************/
+#accueil_sect1 a:hover {
+    color: rgb(19, 97, 157);
+    font-weight: bold;
+}
+/***********section 2**************/
+#accueil_sect2 .after::after {
+    margin: 15px auto 45px auto;
+}
+.border_turquoise {
+    border: 2px solid rgb(46, 167, 176);
+}
+.card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.281);
+    cursor: pointer;
+}
+.card:hover .rounded-circle {
+    background-color: rgb(46, 167, 176);
+}
+.img_blanc {
+    display: none;
+}
+.card:hover .img_blanc {
+    display: inline;
+}
+.card:hover .img_turquoise {
+    display: none;
+}
+/**********************************/
   

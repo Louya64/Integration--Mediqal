@@ -1,0 +1,15 @@
+partout => où mènent les liens ....
+
+
+/*======HEADER========*/
+nav - sous-menus présentation
+carousel - les titres et photos (ou vidéos)
+
+/*=======MAIN=========*/
+/*******sect1**********/
+quelle réaction :hover pour liens?
+
+/*******sect2**********/
+images cards avantages (accueil sect2)
+"image" équipement en turquoise
+toutes les autres en blanc...
