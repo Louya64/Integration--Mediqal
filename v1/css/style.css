@@ -65,13 +65,20 @@ nav {
 }
 /***************dropdowns**************/
 header nav .dropdown-menu {
-    left: -520px !important;
+    background-color: transparent;
     border: none;
     padding: 0;
 }
+header nav #presentation-sous_menus ~ .dropdown-menu {
+    left: -342px !important;
+}
+header nav #offreSoins-sous_menus ~ .dropdown-menu {
+    left: -520px !important;
+}
 header nav .dropdown-item {
-    height: 370px;
+    height: 363px;
     width: 1320px;
+    background-color: white;
 }
 header nav .dropdown-item ul {
     padding: 0;
