@@ -116,17 +116,22 @@ main {
 .slick_card {
     position: relative;
 }
-.slick_card .img_fond_turquoise {
+.fond_turquoise_pour_image_slick {
+    background-color: rgb(46, 167, 176);
+}
+.slick_card .img_hover {
     display: none;
     position: absolute;
     top: 0;
     padding: 84.5px 56.5px;
-    background-color: rgba(46, 167, 176, 0.521);
 }
 .slick_card:hover {
     cursor: pointer;
 }
-.slick_card:hover .img_fond_turquoise {
+.slick_card:hover .img_fond {
+    opacity: 0.3 !important;
+}
+.slick_card:hover .img_hover {
     display: inline;
 }
 .accueil_sect3_slider > button {
