@@ -9,13 +9,13 @@ font-family: 'Roboto', sans-serif; */
 }
 
 .nav-item:hover {
-    background-color: rgba(230, 230, 230, 0.5);
+    background-color: rgb(230, 230, 230);
 }
 .nav-link {
     text-transform: uppercase;
 }
 .bordered_nav-item {
-    border-left: 1px solid rgba(230, 230, 230, 0.5);
+    border-left: 1px solid rgb(230, 230, 230);
 }
 .bg_turquoise {
     background-color: rgb(46, 167, 176);
@@ -61,24 +61,34 @@ h3.after::after {
 /****************nav*********************/
 nav {
     box-shadow: 0 1px 20px black;
-    z-index: 1;
+    z-index: 10;
+}
+nav .nav-item {
+    padding: 0 11px;
 }
 /***************dropdowns**************/
 header nav .dropdown-menu {
-    background-color: transparent;
+    box-shadow: inset 0px 14px 11px -10px rgb(70, 69, 69),
+    inset 0px -11px 8px -150px rgb(170, 168, 168);
     border: none;
     padding: 0;
+    z-index: 9;
 }
 header nav #presentation-sous_menus ~ .dropdown-menu {
-    left: -342px !important;
+    left: -274px !important;
 }
 header nav #offreSoins-sous_menus ~ .dropdown-menu {
-    left: -520px !important;
+    left: -458px !important;
 }
 header nav .dropdown-item {
     height: 363px;
-    width: 1320px;
-    background-color: white;
+    width: 1224px;
+    background-color: transparent;
+}
+header nav .dropdown-item:hover {
+    box-shadow: inset 0px 14px 11px -10px rgb(70, 69, 69),
+    inset 0px -11px 8px -150px rgb(170, 168, 168);
+    background-color: rgb(230, 230, 230);
 }
 header nav .dropdown-item ul {
     padding: 0;
@@ -94,6 +104,9 @@ header nav .dropdown-item a:hover {
     color: rgb(46, 167, 176);
 }
 /***************carousel*****************/
+#carousel_accueil {
+    padding-top: 75px;
+}
 #carousel_accueil .btn_prev {
     transform: scale(2, 2) translate(-500%, -200%);
 }
@@ -190,13 +203,16 @@ main {
 #accueil_sect4 .card {
     border: none;
 }
-#accueil_sect4 .card:hover .card-title{
+/* #accueil_sect4 .card:hover .card-title {
     color: rgb(46, 167, 176);
-}
+} */
 #accueil_sect4 .btn:hover {
     background-color: rgb(46, 167, 176);
     color: white;
     cursor: pointer;
+}
+#accueil_sect4 .btn:hover ~ .card-title {
+    color: rgb(46, 167, 176);
 }
 
 /*====================  FOOTER  ====================*/
@@ -223,4 +239,7 @@ footer a:hover {
 }
 #gcom_link {
     background-color: black;
+}
+#gcom_link img {
+    padding-left: 10px;
 }

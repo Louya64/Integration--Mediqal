@@ -15,22 +15,22 @@
 <body class="bg-white font_roboto">
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0 font_montserrat fw-bold">
-            <div class="container">
-                <a class="navbar-brand py-0 ps-5 pe-4 ms-3" href="index.html"><img src="images/header-nav/logo.png" alt=""></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0 font_montserrat fw-bold position-fixed w-100">
+            <div class="container px-5">
+                <a class="navbar-brand py-0 pe-4" href="index.html"><img src="images/header-nav/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse h-100" id="navbarNavDropdown">
-                    <ul class="navbar-nav w-100">
-                        <li class="nav-item dropdown px-2 bordered_nav-item">
+                    <ul class="navbar-nav w-100 justify-content-end">
+                        <li class="nav-item dropdown bordered_nav-item">
                             <a class="nav-link text-center align-items-center" href="#" id="presentation-sous_menus" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="images/header-nav/icon_presentation.png" alt="">
                                 <p class="m-0">Présentation <i class="fas fa-angle-down"></i></p>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="presentation-sous_menus">
-                                <div class="dropdown-item d-flex justify-content-between px-0">
-                                    <div class="p-5">
+                                <div class="dropdown-item d-flex justify-content-between px-5">
+                                    <div class="py-5">
                                         <h3 class="text-uppercase">Offre de soins</h3>
                                         <hr>
                                         <div class="d-flex">
@@ -68,7 +68,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="p-5">
+                                    <div class="py-5">
                                         <h3 class="text-uppercase">Actualités</h3>
                                         <hr>
                                         <ul>
@@ -78,7 +78,7 @@
                                             <li><a href="">Actu 4</a></li>
                                         </ul>
                                     </div>
-                                    <div class="p-5">
+                                    <div class="py-5">
                                         <h3 class="text-uppercase">Contact</h3>
                                         <hr>
                                         <ul>
@@ -90,14 +90,14 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item dropdown px-2 bordered_nav-item">
+                        <li class="nav-item dropdown bordered_nav-item">
                             <a class="nav-link text-center align-items-center" href="#" id="offreSoins-sous_menus" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="images/header-nav/icon_offre_soins.png" alt="">
                                 <p class="m-0">Offre de soins <i class="fas fa-angle-down"></i></p>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="offreSoins-sous_menus">
-                                <div class="dropdown-item d-flex justify-content-between px-0">
-                                    <div class="p-5">
+                                <div class="dropdown-item d-flex justify-content-between px-5">
+                                    <div class="py-5">
                                         <h3 class="text-uppercase">Médical</h3>
                                         <hr>
                                         <div class="d-flex">
@@ -125,7 +125,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="p-5">
+                                    <div class="py-5">
                                         <h3 class="text-uppercase">Plateau technique</h3>
                                         <hr>
                                         <ul>
@@ -133,7 +133,7 @@
                                             <li><a href="">Echographie obstétrique</a></li>
                                         </ul>
                                     </div>
-                                    <div class="p-5">
+                                    <div class="py-5">
                                         <h3 class="text-uppercase">Paramédical</h3>
                                         <hr>
                                         <ul>
@@ -145,25 +145,25 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item text-center align-items-center px-2 bordered_nav-item">
+                        <li class="nav-item text-center align-items-center bordered_nav-item">
                             <a class="nav-link" href="#">
                                 <img src="images/header-nav/icon_actualites.png" alt="">
                                 <p class="m-0">Actualités</p>
                             </a>
                         </li>
-                        <li class="nav-item text-center align-items-center px-2 bordered_nav-item">
+                        <li class="nav-item text-center align-items-center bordered_nav-item">
                             <a class="nav-link" href="#">
                                 <img src="images/header-nav/icon_contact.png" alt="">
                                 <p class="m-0">Contact</p>
                             </a>
                         </li>
-                        <li class="nav-item text-center align-items-center bg_turquoise px-2">
+                        <li class="nav-item text-center align-items-center bg_turquoise">
                             <a class="nav-link" href="#">
                                 <img src="images/header-nav/icon_tel.png" alt="">
                                 <p class="m-0 text-white">05 59 01 16 60</p>
                             </a>
                         </li>
-                        <li class="nav-item text-center align-items-center bg_bleu_fonce px-2">
+                        <li class="nav-item text-center align-items-center bg_bleu_fonce">
                             <a class="nav-link" href="#">
                                 <img src="images/header-nav/logo_doctolib3.png" alt="">
                                 <p class="m-0 text-white">RDV en ligne</p>
@@ -393,37 +393,37 @@
             </div>
         </section>
 
-        <section id="accueil_sect4" class="container mt-5">
+        <section id="accueil_sect4" class="container mt-5 p-5">
             <h2 class="col_bleu_fonce text-uppercase after h2 fw-bold text-center">Nos dernières actualités</h2>
             <div class="row">
-                <div class="card col mx-3">
+                <div class="card col p-0 me-3">
                     <img class="card-img-top" src="images/actu/titre1.png" alt="">
-                    <div class="card-body">
-                        <p class="text-uppercase">15 Août 2019</p>
-                        <hr>
-                        <h5 class="card-title fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                    <div class="card-body d-flex flex-column-reverse">
+                        <a class="btn align-self-start fw-bold border_turquoise rounded-pill px-4" href="">Lire la suite <i class="fas fa-chevron-right"></i></a>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error, blanditiis excepturi obcaecati libero natus necessitatibus omnis</p>
-                        <a class="btn fw-bold border_turquoise rounded-pill px-4" href="">Lire la suite <i class="fas fa-chevron-right"></i></a>
+                        <h5 class="card-title fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                        <hr>
+                        <p class="text-uppercase">15 Août 2019</p>
                     </div>
                 </div>
-                <div class="card col mx-3">
+                <div class="card col p-0 me-3">
                     <img class="card-img-top" src="images/actu/titre1.png" alt="">
-                    <div class="card-body">
-                        <p class="text-uppercase">15 Août 2019</p>
-                        <hr>
-                        <h5 class="card-title fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                    <div class="card-body d-flex flex-column-reverse">
+                        <a class="btn align-self-start fw-bold border_turquoise rounded-pill px-4" href="">Lire la suite <i class="fas fa-chevron-right"></i></a>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error, blanditiis excepturi obcaecati libero natus necessitatibus omnis</p>
-                        <a class="btn fw-bold border_turquoise rounded-pill px-4" href="">Lire la suite <i class="fas fa-chevron-right"></i></a>
+                        <h5 class="card-title fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                        <hr>
+                        <p class="text-uppercase">6 Août 2019</p>
                     </div>
                 </div>
-                <div class="card col mx-3">
+                <div class="card col p-0 me-3">
                     <img class="card-img-top" src="images/actu/titre1.png" alt="">
-                    <div class="card-body">
-                        <p class="text-uppercase">15 Août 2019</p>
-                        <hr>
-                        <h5 class="card-title fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                    <div class="card-body d-flex flex-column-reverse">
+                        <a class="btn align-self-start fw-bold border_turquoise rounded-pill px-4" href="">Lire la suite <i class="fas fa-chevron-right"></i></a>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error, blanditiis excepturi obcaecati libero natus necessitatibus omnis</p>
-                        <a class="btn fw-bold border_turquoise rounded-pill px-4" href="">Lire la suite <i class="fas fa-chevron-right"></i></a>
+                        <h5 class="card-title fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                        <hr>
+                        <p class="text-uppercase">27 Juillet 2019</p>
                     </div>
                 </div>
             </div>
@@ -467,7 +467,7 @@
                 </div>
             </div>
         </div>
-        <div id="gcom_link" class="text-center py-3">Création de site internet <a href="www.agence-gcom.fr">www.agence-gcom.fr <img src="images/logo-Gcom.png" alt=""></a></div>
+        <div id="gcom_link" class="text-center py-3">Création de site internet <a href="https://www.agence-gcom.fr/" target="_blank">www.agence-gcom.fr<img src="images/logo-Gcom.png" alt=""></a></div>
     </footer>
     <script src="jQuery-3.6.0/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
