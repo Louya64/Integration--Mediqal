@@ -63,7 +63,29 @@ nav {
     box-shadow: 0 1px 20px black;
     z-index: 1;
 }
-/****************************************/
+/***************dropdowns**************/
+header nav .dropdown-menu {
+    left: -520px !important;
+    border: none;
+    padding: 0;
+}
+header nav .dropdown-item {
+    height: 370px;
+    width: 1320px;
+}
+header nav .dropdown-item ul {
+    padding: 0;
+}
+header nav .dropdown-item li {
+    list-style: none;
+}
+header nav .dropdown-item a {
+    color: black;
+    text-decoration: none;
+}
+header nav .dropdown-item a:hover {
+    color: rgb(46, 167, 176);
+}
 /***************carousel*****************/
 #carousel_accueil .btn_prev {
     transform: scale(2, 2) translate(-500%, -200%);
