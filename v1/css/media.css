@@ -1,0 +1,95 @@
+@media screen and (max-width : 1647px) {
+    #carousel_accueil h5 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width : 1400px) {
+    nav {
+        font-size: smaller;
+    }
+    nav .nav-item {
+        padding: 0;
+    }
+    header nav #presentation-sous_menus ~ .dropdown-menu {
+        left: -345px !important;
+    }
+    header nav #offreSoins-sous_menus ~ .dropdown-menu {
+        left: -483px !important;
+    }
+    header nav .dropdown-item {
+        height: 363px;
+        width: 1044px;
+        font-size: smaller;
+    }
+    #carousel_accueil h5 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width : 1200px) {
+    .navbar-brand {
+        padding-right: 0 !important;
+        margin-right: 0;
+    }
+    .navbar-brand img {
+        width: 150px;
+    }
+    header nav #presentation-sous_menus ~ .dropdown-menu {
+        left: -165px !important;
+    }
+    header nav #offreSoins-sous_menus ~ .dropdown-menu {
+        left: -303px !important;
+    }
+    header nav .dropdown-item {
+        height: 263px;
+        width: 864px;
+        font-size: smaller;
+    }
+    header nav .dropdown-item h3 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    header nav .dropdown-item ul {
+        padding-right: 10px !important;
+    }
+    header nav .dropdown-item > div {
+        padding-top: 10px !important;
+    }
+    #carousel_accueil h5 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width : 992px) {
+    .navbar-brand {
+        padding: 20px !important;
+        margin: auto;
+    }
+    .navbar-brand img {
+        width: 350px;
+    }
+    header nav .dropdown-item {
+        height: auto;
+        width: 623px;
+        display: block !important;
+    }
+    #carousel_accueil {
+        padding-top: 0;
+    }
+    #carousel_accueil h5 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .navbar-brand img {
+        width: 250px;
+    }
+    header nav .dropdown-item {
+        width: 443px;
+        font-size: smaller;
+    }
+}
+
+@media screen and (max-width : 576px) {}

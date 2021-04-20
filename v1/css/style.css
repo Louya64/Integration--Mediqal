@@ -108,10 +108,14 @@ header nav .dropdown-item a:hover {
     padding-top: 75px;
 }
 #carousel_accueil .btn_prev {
-    transform: scale(2, 2) translate(-500%, -200%);
+    top: 40%;
+    left: 32px;
+    transform: scale(2, 2);
 }
 #carousel_accueil .btn_next {
-    transform: scale(2, 2) translate(500%, -200%);
+    top: 40%;
+    right: 32px;
+    transform: scale(2, 2);
 }
 .carousel-control-next, .carousel-control-prev {
     opacity: 1;
@@ -238,7 +242,7 @@ footer a:hover {
     width: 33%;
 }
 #gcom_link {
-    background-color: black;
+    background-color: #10191f;
 }
 #gcom_link img {
     padding-left: 10px;
