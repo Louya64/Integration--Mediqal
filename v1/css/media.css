@@ -87,6 +87,9 @@
     #accueil_sect2 .card {
         width: 45%;
     }
+    .slick-dots {
+        left: 34.5%;
+    }
 }
 
 @media screen and (max-width : 992px) {
@@ -127,6 +130,12 @@
     #accueil_sect2 .card {
         min-width: 281px;
     }
+    #accueil_sect4 h5 {
+        font-size: 18px;
+    }
+    #accueil_sect4 {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width : 768px) {
@@ -143,6 +152,13 @@
     }
     #accueil_sect2 .card {
         min-width: 100%;
+    }
+    #accueil_sect3 h2 {
+        width: 387px;
+        margin: auto;
+    }
+    .slick-dots {
+        left: 27%;
     }
 }
 

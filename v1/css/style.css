@@ -196,7 +196,7 @@ main {
     align-items: center;
     position: absolute;
     bottom: -40px;
-    left: 40%;
+    left: 42.5%;
 }
 .slick-dots li {
     font-size: 30px;
@@ -210,6 +210,8 @@ main {
 /************section4****************/
 #accueil_sect4 .card {
     border: none;
+}#accueil_sect4 .card:hover img {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.281);
 }
 #accueil_sect4 .btn:hover {
     background-color: rgb(46, 167, 176);
@@ -224,15 +226,16 @@ main {
 footer {
     transform: translate(0, -80px);
 }
-footer a {
+footer a, #gcom_link a {
     color: white;
     font-weight: bold;
 }
-footer a:hover {
+footer a:hover, #gcom_link a:hover {
     color: rgb(46, 167, 176);
 }
 #footer_nav {
     background-color: rgb(36, 51, 61);
+    background-size: cover;
     height: 396px;
     font-size: 15px;
 }
@@ -244,6 +247,8 @@ footer a:hover {
     width: 33%;
 }
 #gcom_link {
+    color: white;
+    height: 80px;
     background-color: rgb(16, 25, 31);
 }
 #gcom_link img {
