@@ -135,6 +135,10 @@ main {
     font-weight: bold;
 }
 /***********section 2**************/
+#accueil_sect2 .card {
+    width: 32%;
+    min-width: 324px;
+}
 #accueil_sect2 .card:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.281);
     cursor: pointer;
@@ -207,9 +211,6 @@ main {
 #accueil_sect4 .card {
     border: none;
 }
-/* #accueil_sect4 .card:hover .card-title {
-    color: rgb(46, 167, 176);
-} */
 #accueil_sect4 .btn:hover {
     background-color: rgb(46, 167, 176);
     color: white;
@@ -231,7 +232,7 @@ footer a:hover {
     color: rgb(46, 167, 176);
 }
 #footer_nav {
-    background-image: url("../images/logo_fond_footer.png");
+    background-color: rgb(36, 51, 61);
     height: 396px;
     font-size: 15px;
 }
@@ -239,10 +240,11 @@ footer a:hover {
     height: 100%;
 }
 .footer_nav_children {
+    z-index: 1;
     width: 33%;
 }
 #gcom_link {
-    background-color: #10191f;
+    background-color: rgb(16, 25, 31);
 }
 #gcom_link img {
     padding-left: 10px;
