@@ -9,11 +9,5 @@ carousel - les titres et photos (ou vidéos)
 /*******sect1**********/
 quelle réaction :hover pour liens?
 
-/*******sect2**********/
-images cards avantages (accueil sect2)
-"image" équipement en turquoise
-toutes les autres en blanc...
-
 /*******sect3*********/
-image non colorée cardio
-toutes les autres cards=> manque image quand hover
+manque 6/7 image quand hover
