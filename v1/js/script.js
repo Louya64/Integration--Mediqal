@@ -1,9 +1,13 @@
 $(document).ready(function(){
+    
+    let translateY = ($(window).width() - 992) * 26.9 / 100;
+    $("main").css("transform", "translate(0, -" + translateY + "px)");
 
     $(window).on("resize", function() {
         if (window.matchMedia("(min-width: 992px)").matches) {
             $("nav").addClass("position-fixed");
-            let translateY = (($(window).width()) * 250 / 928) - (992 * 250 / 928);
+            // translateY = (($(window).width()) * 250 / 928) - (992 * 250 / 928);
+            let translateY = ($(window).width() - 992) * 26.9 / 100;
             $("main").css("transform", "translate(0, -" + translateY + "px)");
             $("#accueil_sect4").addClass("container");
         } else {

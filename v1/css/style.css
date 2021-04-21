@@ -58,7 +58,7 @@ h3.after::after {
     margin-bottom: 35px;
 }
 /*=========================HEADER==========================*/
-/****************nav*********************/
+/****************nav*****************/
 nav {
     box-shadow: 0 1px 20px black;
     z-index: 10;
@@ -103,7 +103,7 @@ header nav .dropdown-item a {
 header nav .dropdown-item a:hover {
     color: rgb(46, 167, 176);
 }
-/***************carousel*****************/
+/***************carousel**************/
 #carousel_accueil {
     padding-top: 75px;
 }
@@ -125,10 +125,7 @@ header nav .dropdown-item a:hover {
     top: 15%;
 }
 /*=========================MAIN============================*/
-main {
-    transform: translate(0, -250px);
-}
-/*==========PAGE ACCUEIL==========*/
+/*=====================PAGE ACCUEIL========================*/
 /***********section 1**************/
 #accueil_sect1 a:hover {
     color: rgb(19, 97, 157);
