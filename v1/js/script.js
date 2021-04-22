@@ -1,10 +1,11 @@
 $(document).ready(function(){
 
-    if (window.matchMedia("(min-width: 992px)").matches) {
+    if ($(window).width() > 992) {
+    // if (window.matchMedia("(min-width: 992px)").matches) {
         $("nav").addClass("position-fixed");
-        let translateY = ($(window).width() - 992) * 22 / 100;
-        $("main").css("transform", "translate(0, -" + translateY + "px)");
-        $("footer").css("transform", "translate(0, -" + translateY + "px)");
+        let translateY = ($(window).width() - 993) * 22 / 100;
+        $("main").css("margin-top", "-" + translateY + "px");
+        $("footer").css("margin-top", "-" + translateY + "px");
         $("#accueil_sect4").addClass("container");
         $(".footer_nav_children_p").removeClass("d-none");
         $(".footer_nav_children").unbind("click");
@@ -20,23 +21,20 @@ $(document).ready(function(){
         $(".footer_nav_children").bind("click", function() {
             $(".footer_nav_children").removeClass("active");
             $(this).addClass("active");
+            $(this).css("z-index", "2");
+            ($(this).find(".footer_nav_children_p")).toggleClass("d-none");
             $(".footer_nav_children:not(\".active\") .footer_nav_children_p").addClass("d-none");
             $(".footer_nav_children:not(\".active\")").css("z-index", "1");
-            ($(this).find("div")).toggleClass("d-none");
-            if ($(this).css("z-index") == 1) {
-                $(this).css("z-index", "2");
-            } else {
-                $(this).css("z-index", "1");
-            }
         });
     }
 
     $(window).on("resize", function() {
-        if (window.matchMedia("(min-width: 992px)").matches) {
+        if ($(window).width() > 992) {
+        // if (window.matchMedia("(min-width: 992px)").matches) {
             $("nav").addClass("position-fixed");
-            translateY = ($(window).width() - 992) * 22 / 100;
-            $("main").css("transform", "translate(0, -" + translateY + "px)");
-            $("footer").css("transform", "translate(0, -" + translateY + "px)");
+            translateY = ($(window).width() - 993) * 22 / 100;
+            $("main").css("margin-top", "-" + translateY + "px");
+            $("footer").css("margin-top", "-" + translateY + "px");
             $("#accueil_sect4").addClass("container");
             $(".footer_nav_children_p").removeClass("d-none");
             $(".footer_nav_children").unbind("click");
@@ -52,14 +50,10 @@ $(document).ready(function(){
             $(".footer_nav_children").bind("click", function() {
                 $(".footer_nav_children").removeClass("active");
                 $(this).addClass("active");
+                $(this).css("z-index", "2");
+                ($(this).find(".footer_nav_children_p")).toggleClass("d-none");
                 $(".footer_nav_children:not(\".active\") .footer_nav_children_p").addClass("d-none");
                 $(".footer_nav_children:not(\".active\")").css("z-index", "1");
-                ($(this).find("div")).toggleClass("d-none");
-                if ($(this).css("z-index") == 1) {
-                    $(this).css("z-index", "2");
-                } else {
-                    $(this).css("z-index", "1");
-                }
             });
         }
     });
