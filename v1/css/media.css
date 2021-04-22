@@ -4,7 +4,7 @@
     }
 }
 
-@media screen and (max-width : 1400px) {
+@media screen and (max-width : 1399px) {
     nav {
         font-size: smaller;
     }
@@ -16,6 +16,10 @@
     }
     header nav #offreSoins-sous_menus ~ .dropdown-menu {
         left: -483px !important;
+    }
+    header nav .dropdown-item h3 {
+        font-size: 18px;
+        font-weight: bold;
     }
     header nav .dropdown-item {
         height: 363px;
@@ -42,7 +46,7 @@
     }
 }
 
-@media screen and (max-width : 1200px) {
+@media screen and (max-width : 1199px) {
     .navbar-brand {
         padding-right: 0 !important;
         margin-right: 0;
@@ -60,10 +64,6 @@
         height: 263px;
         width: 864px;
         font-size: smaller;
-    }
-    header nav .dropdown-item h3 {
-        font-size: 18px;
-        font-weight: bold;
     }
     header nav .dropdown-item ul {
         padding-right: 10px !important;
@@ -92,7 +92,7 @@
     }
 }
 
-@media screen and (max-width : 992px) {
+@media screen and (max-width : 991px) {
     .navbar-brand {
         padding: 20px !important;
         margin: auto;
@@ -104,6 +104,9 @@
         height: auto;
         width: 623px;
         display: block !important;
+    }
+    #span_truc {
+        display: none;
     }
     #carousel_accueil {
         padding-top: 0;
@@ -138,7 +141,7 @@
     }
 }
 
-@media screen and (max-width : 768px) {
+@media screen and (max-width : 767px) {
     .navbar-brand img {
         width: 250px;
     }
@@ -160,6 +163,21 @@
     .slick-dots {
         left: 27%;
     }
+    #accueil_sect4 img {
+        width: 50%;
+        margin: auto;
+    }
+    #accueil_sect4 {
+        text-align: center;
+    }
+    #accueil_sect4 .btn {
+        margin-bottom: 70px;
+        align-self: center !important;
+    }
+    footer.mt-5 {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
 }
 
-@media screen and (max-width : 576px) {}
+@media screen and (max-width : 575px) {}

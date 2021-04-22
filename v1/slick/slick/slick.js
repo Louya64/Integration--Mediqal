@@ -44,8 +44,8 @@
                 appendDots: $(element),
                 arrows: true,
                 asNavFor: null,
-                prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
-                nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
+                prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><i class=\"fas fa-chevron-left\"></i></button>',
+                nextArrow: '<button class="slick-next" aria-label="Next" type="button"><i class=\"fas fa-chevron-right\"></i></button>',
                 autoplay: false,
                 autoplaySpeed: 3000,
                 centerMode: false,
@@ -1346,6 +1346,7 @@
                     'aria-selected': null,
                     'tabindex': '-1'
                 });
+                $(this).html("•").css("color", "rgb(46, 167, 176)");
 
             }).eq(_.currentSlide).find('button').attr({
                 'aria-selected': 'true',

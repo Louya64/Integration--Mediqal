@@ -220,9 +220,6 @@ header nav .dropdown-item a:hover {
 }
 
 /*====================  FOOTER  ====================*/
-footer {
-    transform: translate(0, -80px);
-}
 footer a, #gcom_link a {
     color: white;
     font-weight: bold;
@@ -232,8 +229,6 @@ footer a:hover, #gcom_link a:hover {
 }
 #footer_nav {
     background-color: rgb(36, 51, 61);
-    background-size: cover;
-    height: 396px;
     font-size: 15px;
 }
 #footer_nav > div {
@@ -244,6 +239,7 @@ footer a:hover, #gcom_link a:hover {
     width: 33%;
 }
 #gcom_link {
+    bottom: -80px;
     color: white;
     height: 80px;
     background-color: rgb(16, 25, 31);
