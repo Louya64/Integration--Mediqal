@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     if (window.matchMedia("(min-width: 992px)").matches) {
         $("nav").addClass("position-fixed");
-        let translateY = ($(window).width() - 992) * 26.9 / 100;
+        let translateY = ($(window).width() - 992) * 22 / 100;
         $("main").css("transform", "translate(0, -" + translateY + "px)");
         $("footer").css("transform", "translate(0, -" + translateY + "px)");
         $("#accueil_sect4").addClass("container");
@@ -34,7 +34,7 @@ $(document).ready(function(){
     $(window).on("resize", function() {
         if (window.matchMedia("(min-width: 992px)").matches) {
             $("nav").addClass("position-fixed");
-            translateY = ($(window).width() - 992) * 26.9 / 100;
+            translateY = ($(window).width() - 992) * 22 / 100;
             $("main").css("transform", "translate(0, -" + translateY + "px)");
             $("footer").css("transform", "translate(0, -" + translateY + "px)");
             $("#accueil_sect4").addClass("container");

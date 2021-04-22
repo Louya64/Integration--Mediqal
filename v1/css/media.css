@@ -168,16 +168,10 @@
         width: 100%;
         background-color: rgb(58, 72, 81);
         padding: 14px;
-        /* display: none; */
     }
     .footer_nav_children:hover {
         cursor: pointer;
-        /* z-index: 2; */
     }
-    /* .footer_nav_children:hover .footer_nav_children_p {
-        display: block;
-        z-index: 3 !important;
-    } */
 }
 
 @media screen and (max-width : 767px) {
