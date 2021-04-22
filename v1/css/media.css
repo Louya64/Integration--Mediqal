@@ -90,6 +90,12 @@
     .slick-dots {
         left: 34.5%;
     }
+    #footer_nav h3 {
+        font-size: 17px !important;
+    }
+    .footer_nav_children {
+        padding-top: 0px !important;
+    }
 }
 
 @media screen and (max-width : 991px) {
@@ -139,6 +145,39 @@
     #accueil_sect4 {
         font-size: 15px;
     }
+    #footer_nav > div {
+        flex-direction: column;
+        justify-content: space-around !important;
+        align-items: center;
+    }
+    .footer_nav_children {
+        position: relative;
+        padding: 0 !important;
+        text-align: center;
+        width: 100%;
+    }
+    #footer_nav .fa-angle-down {
+        display: inline;
+    }
+    #footer_nav h3.after::after {
+        margin: 20px auto 35px auto;
+    }
+    .footer_nav_children_p {
+        position: absolute;
+        top: 45px;
+        width: 100%;
+        background-color: rgb(58, 72, 81);
+        padding: 14px;
+        /* display: none; */
+    }
+    .footer_nav_children:hover {
+        cursor: pointer;
+        /* z-index: 2; */
+    }
+    /* .footer_nav_children:hover .footer_nav_children_p {
+        display: block;
+        z-index: 3 !important;
+    } */
 }
 
 @media screen and (max-width : 767px) {

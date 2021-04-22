@@ -229,10 +229,18 @@ footer a:hover, #gcom_link a:hover {
 }
 #footer_nav {
     background-color: rgb(36, 51, 61);
-    font-size: 15px;
+    height: 396px;
+    font-size: 13.5px;
 }
 #footer_nav > div {
     height: 100%;
+}
+#footer_nav h3.after::after {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+#footer_nav .fa-angle-down {
+    display: none;
 }
 .footer_nav_children {
     z-index: 1;
