@@ -1346,7 +1346,8 @@
                     'aria-selected': null,
                     'tabindex': '-1'
                 });
-                $(this).html("•").css("color", "rgb(46, 167, 176)");
+                // $(this).html("•").css("color", "rgb(46, 167, 176)");
+                $(this).html("");
 
             }).eq(_.currentSlide).find('button').attr({
                 'aria-selected': 'true',

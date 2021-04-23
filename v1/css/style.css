@@ -187,20 +187,25 @@ header nav .dropdown-item a:hover {
     color: white;
 }
 .slick-dots {
+    width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: center;
     position: absolute;
-    bottom: -40px;
-    left: 42.5%;
+    bottom: 0;
+    padding: 0;
 }
 .slick-dots li {
+    background-color: rgb(46, 167, 176);
+    height: 6px;
+    width: 8px;
+    border-radius: 3px;
+    margin: 0 4px;
     font-size: 30px;
     list-style: none;
-    padding: 0 10px;
 }
 .slick-dots li.slick-active {
-    font-size: 50px;
-    padding-bottom: 3px;
+    width: 16px;
+    margin: 0 5px;
 }
 /************section4****************/
 #accueil_sect4 .card {

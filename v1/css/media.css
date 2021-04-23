@@ -87,9 +87,6 @@
     #accueil_sect2 .card {
         width: 45%;
     }
-    .slick-dots {
-        left: 34.5%;
-    }
     #footer_nav h3 {
         font-size: 17px !important;
     }
@@ -168,6 +165,7 @@
         width: 100%;
         background-color: rgb(58, 72, 81);
         padding: 14px;
+        display: none;
     }
     .footer_nav_children:hover {
         cursor: pointer;
@@ -192,9 +190,6 @@
     #accueil_sect3 h2 {
         width: 387px;
         margin: auto;
-    }
-    .slick-dots {
-        left: 27%;
     }
     #accueil_sect4 img {
         width: 50%;
