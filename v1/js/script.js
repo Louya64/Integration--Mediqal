@@ -1,43 +1,46 @@
 $(document).ready(function(){
 
-    function footerEventResponsive() {
-        let $p = $(this).find(".footer_nav_children_p");
-        let $this = $(this);
-        console.log("$this: ");
-        console.log($this);
-        $(".footer_nav_children").not($this).css("z-index", "1");
-        $(".footer_nav_children_p").not($p).css("display", "none");
-        $this.css("z-index", "2");
-        $p.toggle();
-        
-    }
-
     function responsive() {
-        // if ($(window).width() > 974) { // = le breakpoint 992 de bootstrap - barre défilement?
         if (window.matchMedia("(min-width: 992px)").matches) {
             $("nav").addClass("position-fixed");
-            let translateY = ($(window).width() - 993) * 22 / 100;
+            let translateY = $("#carousel_accueil img").height() * 32 / 100;
+            // let translateY = ($(window).width() - 993) * 22 / 100;
             $("main").css("margin-top", "-" + translateY + "px");
             $("footer").css("margin-top", "-" + translateY + "px");
             $("#accueil_sect4").addClass("container");
             $(".footer_nav_children_p").css("display", "block");
             $(".footer_nav_children").unbind("click");
+            $(window).unbind("click", footerEventResponsiveClear);
     
         } else {
             $("nav").removeClass("position-fixed");
-            $("main").css("transform", "none");
-            $("footer").css("transform", "none");
             $("#accueil_sect4").removeClass("container");
+            $("main").css("margin-top", "0");
+            $("footer").css("margin-top", "0");
     
-            //à partir breakpoint 992, d-none sur les paragraphes du footer et toogle au click
             $(".footer_nav_children_p").css("display", "none");
             $(".footer_nav_children").bind("click", footerEventResponsive);
+            $(window).bind("click", footerEventResponsiveClear);
         }
+    }
+    
+    function footerEventResponsive(e) {
+        let $p = $(this).find(".footer_nav_children_p");
+        let $this = $(this);
+        $this.css("z-index", "2");
+        $p.toggle();
+        e.stopPropagation();
+    }
+    
+    function footerEventResponsiveClear() {
+        $(".footer_nav_children_p").css("display", "none");
+        $(".footer_nav_children").css("z-index", "1");
     }
 
     responsive();
 
     $(window).on("resize", function() {
+        // responsive();
         location.reload();
     });
 
