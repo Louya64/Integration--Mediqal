@@ -125,6 +125,9 @@ header nav .dropdown-item a:hover {
     color: white;
     top: 15%;
 }
+.btn_carousel:hover {
+    background-color: rgb(46, 167, 176);
+}
 /*=============================MAIN===============================*/
 /*=========================PAGE ACCUEIL===========================*/
 /***********section 1**************/
